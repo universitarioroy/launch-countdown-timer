@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --Grayishblue: hsl(237, 18%, 59%);
+  --Softred: hsl(345, 95%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --Darkdesaturatedblue: hsl(236, 21%, 26%);
+  --Verydarkblue: hsl(235, 16%, 14%);
+  --Verydark-blue: hsl(234, 17%, 12%);
+  font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 100;
+    background: url('../src/assets/images/bg-stars.svg') no-repeat top center,
+                url('../src/assets/images/pattern-hills.svg') no-repeat bottom center,
+                var(--Verydarkblue);
+    background-size: 100% 65%,100% 35%,100%;
+    display: grid;
+    place-items: center;
+    color:var(--White);
+}
+
+.main{
+  width: 90%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+
+}
+
+
